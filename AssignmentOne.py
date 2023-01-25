@@ -84,7 +84,7 @@ print(f"Area of Circle with Radius {radius}: {math.pi * radius ** 2}\n\n")
 # Question Six
 print("----Question Six----\n")
 teacher_str = "I am a teacher and I love to inspire and teach people"
-A = set(str.split(teacher_str))
+A = set(str.split(teacher_str))  # split the string by spaces into a set
 print(f"Unique words in the string: {len(A)}\n\n")
 
 # Question Seven
@@ -100,8 +100,8 @@ print(f"The area of  cirlce with radius {radius} is {area:.0f} meters square.\n\
 # Question Nine
 print("----Question Nine----\n")
 lbs = str.split(input("Enter weights separated by spaces (ex. 10 20): "))
-lbs = list(map(int, lbs))
-kg = [round(i / 2.205, 2) for i in lbs]
+lbs = list(map(int, lbs))  # set pounds to an integer array
+kg = [round(i / 2.205, 2) for i in lbs]  # loop through pounds, set it to KGs rounded
 print(f"Pounds: {lbs}")
 print(f"Kilograms: {kg}")
 
