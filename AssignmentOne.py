@@ -18,7 +18,7 @@ ages_median = ages[len(ages) // 2] if len(ages) % 2 == 0 else (ages[len(ages) //
 ages_average = sum(ages) / len(ages)
 ages_range = max(ages) - min(ages)
 print(f"Sorted, with inserted values: {ages}\nMedian: {ages_median}\nMean (Average): "
-      "{ages_average}\nRange: {ages_range}\n\n")
+      f"{ages_average}\nRange: {ages_range}\n\n")
 
 # Question Two
 print("----Question Two----\n")
@@ -95,7 +95,7 @@ print(f"Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki\n\n")
 print("----Question Eight----\n")
 radius = 10
 area = 3.14 * radius ** 2
-print(f"The area of  cirlce with radius {radius} is {area:.0f} meters square.\n\n")
+print(f"The area of  circle with radius {radius} is {area:.0f} meters square.\n\n")
 
 # Question Nine
 print("----Question Nine----\n")
@@ -104,5 +104,3 @@ lbs = list(map(int, lbs))  # set pounds to an integer array
 kg = [round(i / 2.205, 2) for i in lbs]  # loop through pounds, set it to KGs rounded
 print(f"Pounds: {lbs}")
 print(f"Kilograms: {kg}")
-
-
